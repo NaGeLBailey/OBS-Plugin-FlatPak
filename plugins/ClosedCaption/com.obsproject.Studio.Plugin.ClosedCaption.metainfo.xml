@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.ClosedCaption</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>Source Copy</name>
+  <summary>Provides closed captioning via Google Cloud Speech Recognition API as a standalone OBS plugin, no other tools required. </summary>
+  <developer id="com.ratwithacompiler">
+    <name>RatWithACompiler</name>
+  </developer>
+  <url type="homepage">https://github.com/ratwithacompiler/OBS-captions-plugin</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <releases>
+    <release version="v0.33" date="2025-10-15">
+      <description></description>
+    </release>
+  </releases>
+</component>

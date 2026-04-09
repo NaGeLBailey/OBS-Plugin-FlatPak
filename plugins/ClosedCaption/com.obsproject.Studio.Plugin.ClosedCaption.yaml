@@ -1,0 +1,23 @@
+id: com.obsproject.Studio.Plugin.ClosedCaption
+runtime: com.obsproject.Studio
+runtime-version: stable
+branch: stable
+sdk: org.kde.Sdk//6.6
+build-extension: true
+separate-locales: false
+build-options:
+  prefix: /app/plugins/ClosedCaption
+  strip: true
+modules:
+  - name: closed_captions
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/lib/obs-plugins libobs_google_caption_plugin.so
+    sources:
+      - type: archive
+        url: https://github.com/ratwithacompiler/OBS-captions-plugin/releases/download/v0.33/Closed_Captions_Plugin__v0.33_Linux.zip
+        strip-components: 4
+        sha256: b5217152ae2fefe828d4d01567b688864790c0f2ed954441eab61aa7e2c3435c
+      - type: file
+        path: com.obsproject.Studio.Plugin.ClosedCaption.metainfo.xml
