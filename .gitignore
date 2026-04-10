@@ -1,3 +1,6 @@
+.flatpak-builder
+/build
 plugins/*/build
 plugins/*/.flatpak-builder
 localPluginRepo/
+.env
