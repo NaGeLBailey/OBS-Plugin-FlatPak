@@ -13,12 +13,16 @@
 ### SourceCopy
 Works!
 ### ClosedCaption
-Flatpak builds, but plugin does not load
-```
-os_dlopen(/app/plugins/lib/obs-plugins/libobs_google_caption_plugin.so->/app/plugins/lib/obs-plugins/libobs_google_caption_plugin.so): libobs-frontend-api.so.0: cannot open shared object file: No such file or directory
-```
+Flatpak builds, and add workaround to make it work:
+`--env=LD_LIBRARY_PATH=/app/lib/`  
+KDE Desktop file Command line argument:  
+`run --env=LD_LIBRARY_PATH=/app/lib/ --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio`
 
 ## Changelog
+
+### 2026-04-10
+Tried building ClosedCaption in flatpak context but could not make it happen.
+But the work around works: https://github.com/ratwithacompiler/OBS-captions-plugin/issues/155#issuecomment-3498925450
 
 ### 2026-04-09
 First Day and one plugin works rest needs to made later  
