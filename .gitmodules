@@ -1,0 +1,3 @@
+[submodule "plugins/LocalVocal"]
+	path = plugins/LocalVocal
+	url = https://github.com/royshil/obs-localvocal.git

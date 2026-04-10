@@ -3,6 +3,12 @@
 ## Requirments
  1. flatpak-builder  
  just install it in your distro
+ 2. SDKs...  
+ ```fish
+ flatpak install org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
+ flatpak install org.freedesktop.Sdk//25.08
+ flatpak install org.kde.Sdk//6.6
+ ```
 
 ## Usage
 ```bash
@@ -18,11 +24,17 @@ Flatpak builds, and add workaround to make it work:
 KDE Desktop file Command line argument:  
 `run --env=LD_LIBRARY_PATH=/app/lib/ --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio`
 
+## LocalVocal
+ works but has issues with BackgroundRemoval  
+ https://github.com/royshil/obs-localvocal/issues/300
+
 ## Changelog
 
 ### 2026-04-10
 Tried building ClosedCaption in flatpak context but could not make it happen.
 But the work around works: https://github.com/ratwithacompiler/OBS-captions-plugin/issues/155#issuecomment-3498925450
+
+WorkingLocal Vocal but has some issues with BackgroudRemoval...
 
 ### 2026-04-09
 First Day and one plugin works rest needs to made later  
