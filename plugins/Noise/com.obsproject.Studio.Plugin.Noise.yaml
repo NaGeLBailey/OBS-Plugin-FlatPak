@@ -1,0 +1,30 @@
+id: com.obsproject.Studio.Plugin.Noise
+runtime: com.obsproject.Studio
+runtime-version: stable
+branch: stable
+sdk: org.kde.Sdk//6.6
+build-extension: true
+separate-locales: false
+build-options:
+  prefix: /app/plugins/Noise
+  strip: true
+modules:
+  - name: noise
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_OUT_OF_TREE=On
+    post-install:
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../${FLATPAK_ID}.metainfo.xml
+    sources:
+      - type: git
+        url: https://github.com/FiniteSingularity/obs-noise.git
+        tag: v1.0.0
+        commit: 0815be272ce2b49981dd37d9e28e0bc88f206edc
+        x-checker-data:
+          type: git
+          is-main-source: true
+          tag-pattern: ^([\d.]+)$
+      - type: file
+        path: com.obsproject.Studio.Plugin.Noise.metainfo.xml
