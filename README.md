@@ -31,7 +31,9 @@ Flatpak builds, and add workaround to make it work:
 KDE Desktop file Command line argument:  
 `run --env=LD_LIBRARY_PATH=/app/lib/ --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio`
 
-###
+### Noise
+
+Works!
 
 ## LocalVocal
 
@@ -55,7 +57,7 @@ LocalVocal has some more issues...
 If I try to use the included build.sh  it builds, but the plugin never shows up in OBS.
 If I dont use it but  call the builder myself only generic builds nvdia gest the following error:
 
-```
+```log
 ❯ ./build.sh LocalVocal
 building LocalVocal...
 ==================================================
@@ -116,7 +118,6 @@ Error: module obs-localvocal: Child process exited with code 1
 ```
 
 staying with my build and generic but i do want to use CUDA if possible...
-
 
 ### 2026-04-09
 
