@@ -15,6 +15,7 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DBUILD_OUT_OF_TREE=On
+      - -DLINUX_PORTABLE=off
     post-install:
       - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../${FLATPAK_ID}.metainfo.xml
     sources:

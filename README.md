@@ -30,6 +30,14 @@ KDE Desktop file Command line argument:
 
 ## Changelog
 
+### 2026-04-11
+
+Added Noise. It build but log says
+```
+gs_effect_loop: Technique 'Draw0' not found.
+```
+figure that out.
+
 ### 2026-04-10
 Tried building ClosedCaption in flatpak context but could not make it happen.
 But the work around works: https://github.com/ratwithacompiler/OBS-captions-plugin/issues/155#issuecomment-3498925450
