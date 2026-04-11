@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.Shadertastic</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>Shadertastic</name>
+  <summary>User-friendly shader transition and filters for OBS</summary>
+  <developer id="com.xurei">
+    <name>xurei</name>
+  </developer>
+  <url type="homepage">https://github.com/xurei/shadertastic.git</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <releases>
+    <release version="1.0.2" date="2026-01-26">
+      <description></description>
+    </release>
+    <release version="1.0.1" date="2026-01-11">
+      <description></description>
+    </release>
+    <release version="1.0.0" date="2026-01-10">
+      <description></description>
+    </release>
+  </releases>
+</component>

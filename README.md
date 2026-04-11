@@ -2,15 +2,15 @@
 
 ## Requirments
 
- 1. flatpak-builder  
- just install it in your distro
- 2. SDKs...  
+1. flatpak-builder  
+just install it in your distro
+2. SDKs...  
 
- ```fish
- flatpak install org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
- flatpak install org.freedesktop.Sdk//25.08
- flatpak install org.kde.Sdk//6.6
- ```
+```fish
+flatpak install org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
+flatpak install org.freedesktop.Sdk//25.08
+flatpak install org.kde.Sdk//6.6
+```
 
 ## Usage
 
@@ -37,14 +37,24 @@ Works!
 
 ## LocalVocal
 
- works but has issues with BackgroundRemoval  
- <https://github.com/royshil/obs-localvocal/issues/300>
+works but has issues with BackgroundRemoval  
+<https://github.com/royshil/obs-localvocal/issues/300>
+
+Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
+
+## Shadertastic
+
+It builds but it adds it stuff to the wrong location.
+Can I makea custom CmakeList.txt?
 
 ## Changelog
 
 ### 2026-04-11
 
 Added Noise. And it works!
+
+Added Shadertastic. It builds but it adds it stuff to the wrong location.
+Can I makea custom CmakeList.txt?
 
 ### 2026-04-10
 

@@ -38,7 +38,7 @@ build() {
 			;;
 	esac
 	addPluginRepo
-    flatpak install com.obsproject.Studio.Plugin."$1"
+    flatpak install com.obsproject.Studio.Plugin."$1" --reinstall --assumeyes --noninteractive
 }
 #Generic build
 buildGeneric() {
