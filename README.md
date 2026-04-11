@@ -1,9 +1,11 @@
 # OBS Plugins that NaGeL Needs and its not on Flathub
 
 ## Requirments
+
  1. flatpak-builder  
  just install it in your distro
  2. SDKs...  
+
  ```fish
  flatpak install org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
  flatpak install org.freedesktop.Sdk//25.08
@@ -11,42 +13,48 @@
  ```
 
 ## Usage
+
 ```bash
 ./build.sh <folderName or all>
 ```
 
 ## Status
+
 ### SourceCopy
+
 Works!
+
 ### ClosedCaption
+
 Flatpak builds, and add workaround to make it work:
 `--env=LD_LIBRARY_PATH=/app/lib/`  
 KDE Desktop file Command line argument:  
 `run --env=LD_LIBRARY_PATH=/app/lib/ --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio`
 
+###
+
 ## LocalVocal
+
  works but has issues with BackgroundRemoval  
- https://github.com/royshil/obs-localvocal/issues/300
+ <https://github.com/royshil/obs-localvocal/issues/300>
 
 ## Changelog
 
 ### 2026-04-11
 
-Added Noise. It build but log says
-```
-gs_effect_loop: Technique 'Draw0' not found.
-```
-figure that out.
+Added Noise. And it works!
 
 ### 2026-04-10
+
 Tried building ClosedCaption in flatpak context but could not make it happen.
-But the work around works: https://github.com/ratwithacompiler/OBS-captions-plugin/issues/155#issuecomment-3498925450
+But the work around works: <https://github.com/ratwithacompiler/OBS-captions-plugin/issues/155#issuecomment-3498925450>
 
 WorkingLocal Vocal but has some issues with BackgroudRemoval...
 
 LocalVocal has some more issues...
 If I try to use the included build.sh  it builds, but the plugin never shows up in OBS.
 If I dont use it but  call the builder myself only generic builds nvdia gest the following error:
+
 ```
 ❯ ./build.sh LocalVocal
 building LocalVocal...
@@ -109,6 +117,8 @@ Error: module obs-localvocal: Child process exited with code 1
 
 staying with my build and generic but i do want to use CUDA if possible...
 
+
 ### 2026-04-09
+
 First Day and one plugin works rest needs to made later  
 ![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](obsplugins-greenNeeded.png)
