@@ -2,22 +2,20 @@ id: com.obsproject.Studio.Plugin.Noise
 runtime: com.obsproject.Studio
 runtime-version: stable
 branch: stable
-sdk: org.kde.Sdk//6.6
+sdk: org.freedesktop.Sdk//25.08
 build-extension: true
 separate-locales: false
 build-options:
-  prefix: /app/plugins/noise
-  strip: true
+  prefix: /app/plugins/Noise
 modules:
   - name: noise
     buildsystem: cmake-ninja
-    builddir: true
     config-opts:
       - -DCMAKE_BUILD_TYPE=Release
       - -DBUILD_OUT_OF_TREE=On
       - -DLINUX_PORTABLE=off
     post-install:
-      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../${FLATPAK_ID}.metainfo.xml
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
     sources:
       - type: git
         url: https://github.com/FiniteSingularity/obs-noise.git
