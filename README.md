@@ -22,7 +22,8 @@ flatpak install org.kde.Sdk//6.6
 
 ### SourceCopy
 
-Works!
+Works!  
+It has been Added to Flathub!
 
 ### ClosedCaption
 
@@ -48,6 +49,11 @@ It builds but it adds it stuff to the wrong location.
 Can I makea custom CmakeList.txt?
 
 ## Changelog
+
+### 2026-04-12
+
+SourceCopy has been added to flathub so thisisnt needed anymore! \o/
+Deleting it with this commit!
 
 ### 2026-04-11
 
