@@ -45,8 +45,7 @@ Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
 
 ## Shadertastic
 
-It builds but it adds it stuff to the wrong location.
-Can I makea custom CmakeList.txt?
+Okay it works now it just has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
 ## Changelog
 
@@ -54,6 +53,9 @@ Can I makea custom CmakeList.txt?
 
 SourceCopy has been added to flathub so thisisnt needed anymore! \o/
 Deleting it with this commit!
+
+Shadertasticworks it just has  some conflicts...
+has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
 ### 2026-04-11
 

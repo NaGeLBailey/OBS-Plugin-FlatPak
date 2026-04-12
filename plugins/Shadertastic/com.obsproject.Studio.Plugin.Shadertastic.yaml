@@ -6,7 +6,7 @@ sdk: org.freedesktop.Sdk//25.08
 build-extension: true
 separate-locales: false
 build-options:
-  prefix: /app/plugins/shadertastic
+  prefix: /app/plugins/Shadertastic
   strip: true
   build-args: ['--share=network']
 modules:
