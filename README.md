@@ -57,6 +57,8 @@ Deleting it with this commit!
 Shadertasticworks it just has  some conflicts...
 has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
+`Anyway thank you I will try to Override FetchContent first with OVERRIDE_FIND_PACKAGE if its possible if its not  then i need to figure something else out.`
+
 ### 2026-04-11
 
 Added Noise. And it works!
