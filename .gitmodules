@@ -1,3 +1,6 @@
 [submodule "plugins/LocalVocal"]
 	path = plugins/LocalVocal
 	url = https://github.com/royshil/obs-localvocal.git
+[submodule "plugins/RetroEffects"]
+	path = plugins/RetroEffects
+	url = https://github.com/FiniteSingularity/obs-retro-effects.git

@@ -47,7 +47,28 @@ Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
 
 Okay it works now it just has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
+## RetroEffects
+
+added it bonly black screen.
+
 ## Changelog
+
+### 2026-04-13
+
+Added retro effects, first the shader files was not found by the plugin i solved that, now it just blank/black screen... yet if i use non flatpkversio it works...  
+I really want the flatpak version to work...
+
+Also got some help on Shadertastic stuff...
+
+```txt
+you can force fetchcontent to be offline and figure out where to put the downloaded sources.
+
+<https://github.com/flathub/org.freedesktop.LinuxAudio.Plugins.jc303/blob/branch/25.08/org.freedesktop.LinuxAudio.Plugins.jc303.json#L19>
+
+this is an example
+the cmake documentation is objecting against FETCHCONTENT_FULLY_DISCONNECTED for that situation
+<https://cmake.org/cmake/help/latest/module/FetchContent.html#variable:FETCHCONTENT_FULLY_DISCONNECTED>
+```
 
 ### 2026-04-12
 

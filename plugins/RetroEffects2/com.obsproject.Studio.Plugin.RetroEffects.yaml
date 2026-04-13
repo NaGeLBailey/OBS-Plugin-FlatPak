@@ -1,0 +1,30 @@
+id: com.obsproject.Studio.Plugin.RetroEffects
+runtime: com.obsproject.Studio
+runtime-version: stable
+branch: stable
+sdk: org.freedesktop.Sdk//25.08
+build-extension: true
+separate-locales: false
+build-options:
+  prefix: /app/plugins/RetroEffects
+modules:
+  - name: retro-effects
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DBUILD_OUT_OF_TREE=On
+    post-install:
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
+      - mkdir -p /app/plugins/RetroEffects/share/obs/obs-plugins/obs-retro-effects
+      - cp -r data/* /app/plugins/RetroEffects/share/obs/obs-plugins/obs-retro-effects
+    sources:
+      - type: git
+        url: https://github.com/FiniteSingularity/obs-retro-effects.git
+        tag: 1.0.2
+        commit: 35e9616a6f08692777578e3559d464ff8705929e
+        x-checker-data:
+          type: git
+          is-main-source: true
+          tag-pattern: ^([\d.]+)$
+      - type: file
+        path: com.obsproject.Studio.Plugin.RetroEffects.metainfo.xml
