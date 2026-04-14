@@ -58,12 +58,17 @@ Works!
 
 Works!
 
+## [Image Reaction](https://obsproject.com/forum/resources/image-reaction.1342/)
+
+Works!
+
 ## Changelog
 
 ### 2026-04-14
 
-Added StreamUp seems to work withouthany issue!
-Added Source Profiler! Works!
+Added StreamUp seems to work withouthany issue!  
+Added Source Profiler! Works!  
+Added Image Reaction! Works!
 
 ### 2026-04-13
 
