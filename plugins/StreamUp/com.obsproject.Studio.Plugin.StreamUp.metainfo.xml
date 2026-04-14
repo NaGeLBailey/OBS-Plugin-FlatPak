@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.StreamUp</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>StreamUP Plugin</name>
+  <summary>The toolkit that makes OBS less annoying. Product installation, plugin update checking, scene organisation, custom docks, a toolbar, dedicated hotkeys, a source type, a full WebSocket API, and a pile of quality of life bits. All in one plugin.</summary>
+  <developer id="com.streamup">
+    <name>StreamUp</name>
+  </developer>
+  <url type="homepage">https://github.com/StreamUPTips/obs-streamup</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <releases>
+    <release version="2.2.2" date="2026-04-14" />
+  </releases>
+</component>

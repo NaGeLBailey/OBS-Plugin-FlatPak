@@ -49,9 +49,17 @@ Okay it works now it just has Dependency issue with LocalVocal about libonnxrunt
 
 ## RetroEffects
 
-added it bonly black screen.
+added it but only black screen.
+
+## StreamUp by Andilippi
+
+Works!
 
 ## Changelog
+
+### 2026-04-14
+
+Added StreamUp seems to work withouthany issue!
 
 ### 2026-04-13
 
