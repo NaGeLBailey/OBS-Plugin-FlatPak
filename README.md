@@ -70,6 +70,14 @@ Added StreamUp seems to work withouthany issue!
 Added Source Profiler! Works!  
 Added Image Reaction! Works!
 
+Tried to solve the whole onnxruntime thing. tested it on on flatpak onend even there they conflicted.  
+They wantedtheir own version but system gives back the first onnxruntim the first plugin loads and if thats not the latest version the other plugin deosnt load.
+
+What needs to be solved:
+
+- RetroEffects: blank screen
+- Onnxruntime conflict
+
 ### 2026-04-13
 
 Added retro effects, first the shader files was not found by the plugin i solved that, now it just blank/black screen... yet if i use non flatpkversio it works...  

@@ -1,0 +1,45 @@
+id: com.obsproject.Studio.Plugin.Shadertastic
+runtime: com.obsproject.Studio
+runtime-version: stable
+branch: stable
+sdk: org.freedesktop.Sdk//25.08
+build-extension: true
+separate-locales: false
+build-options:
+  prefix: /app/plugins/Shadertastic
+modules:
+  - name: shadertastic
+    buildsystem: cmake
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_OUT_OF_TREE=On
+      - -DFETCHCONTENT_SOURCE_DIR_ONNXRUNTIME=../deps/onnxruntime-src
+      - -DFETCHCONTENT_SOURCE_DIR_OPENCV=../deps/opencv-src
+      - -UOnnxruntime_VERSION
+      - -DOnnxruntime_VERSION=1.24.4
+    post-install:
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ../${FLATPAK_ID}.metainfo.xml
+    sources:
+      - type: archive
+        url: https://github.com/microsoft/onnxruntime/releases/download/v1.24.4/onnxruntime-linux-x64-1.24.4.tgz
+        sha256: 1fa4dcaef22f6f7d5cd81b28c2800414350c10116f5fdd46a2160082551c5f9b
+        dest: 'deps/onnxruntime-src'
+     
+      - type: archive
+        url: https://github.com/royshil/occ-ai-dep-opencv/releases/download/v4.9.0-1/opencv-linux-v4.9.0-1-Release.tar.gz
+        sha256: 73652c2155b477b5fd95fcd8ea7ce35d313543ece17bdfa3a2b217a0239d74c6
+        dest: 'deps/opencv-src'
+        strip-components: 1
+        archive-type: tar
+
+      - type: git
+        url: https://github.com/xurei/shadertastic.git
+        tag: 1.0.2
+        commit: 4c076d6211e308a1232be8983f89e758cc3e4115
+        x-checker-data:
+          type: git
+          is-main-source: true
+          tag-pattern: ^([\d.]+)$
+      - type: file
+        path: com.obsproject.Studio.Plugin.Shadertastic.metainfo.xml

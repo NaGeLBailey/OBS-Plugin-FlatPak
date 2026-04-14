@@ -43,7 +43,7 @@ build() {
 #Generic build
 buildGeneric() {
 	cd plugins/"$1"
-    flatpak-builder build com.obsproject.Studio.Plugin."$1".yaml --force-clean --repo="$REPOLOCATION" --disable-rofiles-fuse
+    flatpak-builder build com.obsproject.Studio.Plugin."$1".yaml --force-clean --repo="$REPOLOCATION" --disable-rofiles-fuse --verbose
 }
 
 #Special Build for LocalVocal
