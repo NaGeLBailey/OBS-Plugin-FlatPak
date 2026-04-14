@@ -9,7 +9,6 @@ just install it in your distro
 ```fish
 flatpak install org.freedesktop.Sdk.Extension.rust-stable/x86_64/25.08
 flatpak install org.freedesktop.Sdk//25.08
-flatpak install org.kde.Sdk//6.6
 ```
 
 ## Usage
@@ -20,38 +19,42 @@ flatpak install org.kde.Sdk//6.6
 
 ## Status
 
-### SourceCopy
+### [SourceCopy](https://obsproject.com/forum/resources/source-copy.1261/)
 
 Works!  
 It has been Added to Flathub!
 
-### ClosedCaption
+### [ClosedCaption](https://obsproject.com/forum/resources/closed-captioning-via-google-speech-recognition.833/)
 
 Flatpak builds, and add workaround to make it work:
 `--env=LD_LIBRARY_PATH=/app/lib/`  
 KDE Desktop file Command line argument:  
 `run --env=LD_LIBRARY_PATH=/app/lib/ --branch=stable --arch=x86_64 --command=obs com.obsproject.Studio`
 
-### Noise
+### [Noise](https://obsproject.com/forum/resources/noise.1916/)
 
 Works!
 
-## LocalVocal
+## [LocalVocal](https://obsproject.com/forum/resources/localvocal-local-live-captions-translation-on-the-go.1769/)
 
 works but has issues with BackgroundRemoval  
 <https://github.com/royshil/obs-localvocal/issues/300>
 
 Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
 
-## Shadertastic
+## [Shadertastic](https://obsproject.com/forum/resources/shadertastic.2114/)
 
 Okay it works now it just has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
-## RetroEffects
+## [RetroEffects](https://obsproject.com/forum/resources/retro-effects.1972/)
 
 added it but only black screen.
 
-## StreamUp by Andilippi
+## [StreamUp by Andilippi](https://github.com/StreamUPTips/obs-streamup)
+
+Works!
+
+## [SourceProfiler](https://github.com/exeldro/obs-source-profiler)
 
 Works!
 
@@ -60,6 +63,7 @@ Works!
 ### 2026-04-14
 
 Added StreamUp seems to work withouthany issue!
+Added Source Profiler! Works!
 
 ### 2026-04-13
 

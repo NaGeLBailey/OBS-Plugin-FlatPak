@@ -1,0 +1,27 @@
+id: com.obsproject.Studio.Plugin.SourceProfiler
+runtime: com.obsproject.Studio
+runtime-version: stable
+branch: stable
+sdk: org.freedesktop.Sdk//25.08
+build-extension: true
+separate-locales: false
+build-options:
+  prefix: /app/plugins/SourceProfiler
+modules:
+  - name: source-profiler
+    buildsystem: cmake
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=Release
+      - -DBUILD_OUT_OF_TREE=On
+    post-install:
+      - install -Dm644 --target-directory=${FLATPAK_DEST}/share/metainfo ${FLATPAK_ID}.metainfo.xml
+    sources:
+      - type: git
+        url: https://github.com/exeldro/obs-source-profiler.git
+        branch: main
+        x-checker-data:
+          type: git
+          is-main-source: true
+          tag-pattern: ^([\d.]+)$
+      - type: file
+        path: com.obsproject.Studio.Plugin.SourceProfiler.metainfo.xml
