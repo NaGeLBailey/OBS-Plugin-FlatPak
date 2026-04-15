@@ -44,6 +44,8 @@ Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
 
 ## [Shadertastic](https://obsproject.com/forum/resources/shadertastic.2114/)
 
+Works now with some modications: <https://github.com/xurei/shadertastic/pull/24>
+
 Okay it works now it just has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
 
 ## [RetroEffects](https://obsproject.com/forum/resources/retro-effects.1972/)
@@ -63,6 +65,10 @@ Works!
 Works!
 
 ## Changelog
+
+### 2026-04-15
+
+Shadertastic wrk with some extra mdification on my part I will try to mergeit upstream.
 
 ### 2026-04-14
 
