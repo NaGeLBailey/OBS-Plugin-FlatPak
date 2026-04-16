@@ -8,8 +8,8 @@ fi
 # shellcheck disable=SC1091
 source .env
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-REPOLOCATION="$SCRIPT_DIR/localPluginRepo"
+BUILD_SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+REPOLOCATION="$BUILD_SCRIPT_DIR/localPluginRepo"
 SPECIAL_LOCALVOCAL="LocalVocal"
 
 # Adding Repo if neeeded;
@@ -48,9 +48,8 @@ buildGeneric() {
 
 #Special Build for LocalVocal
 buildLocalVocal() {
-	#ACCELERATION=$LOCALVOCAL_ACCELERATION ./plugins/"$SPECIAL_LOCALVOCAL"/flatpak/build.sh  --disable-rofiles-fuse --force-clean --repo="$REPOLOCATION" plugins/"$SPECIAL_LOCALVOCAL"/flatpak/build
-    cd plugins/"$SPECIAL_LOCALVOCAL"/flatpak
-    flatpak-builder build com.obsproject.Studio.Plugin."$SPECIAL_LOCALVOCAL".yaml --force-clean --repo="$REPOLOCATION" --disable-rofiles-fuse
+	cd plugins/"$SPECIAL_LOCALVOCAL" && 
+	ACCELERATION="$LOCALVOCAL_ACCELERATION" ./flatpak/build.sh  --disable-rofiles-fuse --force-clean --repo="$REPOLOCATION" build-dir ./flatpak/com.obsproject.Studio.Plugin."$SPECIAL_LOCALVOCAL".yaml
 }
 
 ARG=('all')

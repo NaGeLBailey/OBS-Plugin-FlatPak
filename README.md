@@ -37,10 +37,7 @@ Works!
 
 ## [LocalVocal](https://obsproject.com/forum/resources/localvocal-local-live-captions-translation-on-the-go.1769/)
 
-works but has issues with BackgroundRemoval  
-<https://github.com/royshil/obs-localvocal/issues/300>
-
-Has some issues: <https://github.com/royshil/obs-localvocal/issues/301>
+Works!
 
 ## [Shadertastic](https://obsproject.com/forum/resources/shadertastic.2114/)
 
@@ -65,6 +62,10 @@ Works!
 Works!
 
 ## Changelog
+
+### 2026-04-16
+
+Fixed my issue with LocalVocal! It was similar to shaderstastic plus i was using the build script wrong now its good!
 
 ### 2026-04-15
 
