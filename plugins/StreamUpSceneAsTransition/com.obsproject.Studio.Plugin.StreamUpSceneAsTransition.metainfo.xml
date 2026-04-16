@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.StreamUpSceneAsTransition</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>StreamUp - Scene As Transition</name>
+  <summary>TA plugin for OBS Studio that will allow you to use a Scene as a Transition.</summary>
+  <developer id="com.streamup">
+    <name>StreamUp</name>
+  </developer>
+  <url type="homepage">https://github.com/StreamUPTips/obs-streamup-scene-as-transition/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <releases>
+    <release version="1.3.1" date="2026-04-12" />
+  </releases>
+</component>
