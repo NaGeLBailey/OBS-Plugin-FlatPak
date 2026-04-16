@@ -59,12 +59,18 @@ Works!
 
 Works!
 
+## [Quick Access Utility](https://obsproject.com/forum/resources/quick-access-utility-qau.2002/)
+
+Works!
+
 ## Changelog
 
 ### 2026-04-16
 
 Fixed my issue with LocalVocal! It was similar to shaderstastic plus i was using the build script wrong now its good!
 Retro Effects also been fixed! ( I think it had an isue with another plugin, that is no w fixed)
+
+Added Quck Access Utility
 
 ### 2026-04-15
 

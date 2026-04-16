@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="addon">
+  <id>com.obsproject.Studio.Plugin.QuickAccessUtility</id>
+  <extends>com.obsproject.Studio</extends>
+  <name>Retro Effects</name>
+  <summary>Retro Effects is an OBS plug-in that provides several filters to simulate retro hardware (e.g.- CRTs, NTSC Signals, etc...) giving your OBS sources an authentic retro look/feel.</summary>
+  <developer id="com.finitesingularity">
+    <name>FiniteSingularity</name>
+  </developer>
+  <url type="homepage">https://github.com/FiniteSingularity/obs-retro-effects</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0</project_license>
+  <releases>
+    <release version="1.0.2" date="2025-10-14" />
+  </releases>
+</component>
