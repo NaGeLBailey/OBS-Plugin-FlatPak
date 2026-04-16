@@ -37,17 +37,15 @@ Works!
 
 ## [LocalVocal](https://obsproject.com/forum/resources/localvocal-local-live-captions-translation-on-the-go.1769/)
 
-Works!
+Works now with some modifications: <https://github.com/royshil/obs-localvocal/pull/303>
 
 ## [Shadertastic](https://obsproject.com/forum/resources/shadertastic.2114/)
 
 Works now with some modications: <https://github.com/xurei/shadertastic/pull/24>
 
-Okay it works now it just has Dependency issue with LocalVocal about libonnxruntime.... the same isue as localVocal has BackgroudRemoval
-
 ## [RetroEffects](https://obsproject.com/forum/resources/retro-effects.1972/)
 
-added it but only black screen.
+Works!
 
 ## [StreamUp by Andilippi](https://github.com/StreamUPTips/obs-streamup)
 
@@ -66,6 +64,7 @@ Works!
 ### 2026-04-16
 
 Fixed my issue with LocalVocal! It was similar to shaderstastic plus i was using the build script wrong now its good!
+Retro Effects also been fixed! ( I think it had an isue with another plugin, that is no w fixed)
 
 ### 2026-04-15
 
